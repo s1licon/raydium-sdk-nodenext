@@ -22,11 +22,11 @@ import {
   InnerSimpleV0Transaction,
   InnerTransaction,
   TxVersion,
-} from '../base'
-import { addComputeBudget } from '../base/instrument'
+} from '../base/index.js'
+import { addComputeBudget } from '../base/instrument.js'
 
-import { chunkArray } from './lodash'
-import { Logger } from './logger'
+import { chunkArray } from './lodash.js'
+import { Logger } from './logger.js'
 
 const logger = Logger.from('common/web3')
 

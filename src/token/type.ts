@@ -1,5 +1,5 @@
-import { JsonFileMetaData } from '../common'
-import { LiquidityVersion } from '../liquidity'
+import { JsonFileMetaData } from '../common/index.js'
+import { LiquidityVersion } from '../liquidity/index.js'
 
 // Native SOL
 export interface NativeTokenInfo {

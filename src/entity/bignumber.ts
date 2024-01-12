@@ -1,8 +1,8 @@
 import BN from 'bn.js'
 
-import { Logger } from '../common'
+import { Logger } from '../common/index.js'
 
-import { TEN } from './constant'
+import { TEN } from './constant.js'
 
 const logger = Logger.from('entity/bignumber')
 

@@ -9,14 +9,14 @@ import {
 import { Commitment, Connection, PublicKey, Signer, SystemProgram, TransactionInstruction } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { generatePubKey, InstructionType } from '../base'
-import { getATAAddress } from '../base/pda'
-import { SYSVAR_RENT_PUBKEY, TOKEN_PROGRAM_ID, validateAndParsePublicKey } from '../common'
-import { BigNumberish, parseBigNumberish } from '../entity'
-import { u8 } from '../marshmallow'
-import { WSOL } from '../token'
+import { generatePubKey, InstructionType } from '../base/index.js'
+import { getATAAddress } from '../base/pda.js'
+import { SYSVAR_RENT_PUBKEY, TOKEN_PROGRAM_ID, validateAndParsePublicKey } from '../common/index.js'
+import { BigNumberish, parseBigNumberish } from '../entity/index.js'
+import { u8 } from '../marshmallow/index.js'
+import { WSOL } from '../token/index.js'
 
-import { SPL_ACCOUNT_LAYOUT } from './layout'
+import { SPL_ACCOUNT_LAYOUT } from './layout.js'
 
 // https://github.com/solana-labs/solana-program-library/tree/master/token/js/client
 export class Spl {

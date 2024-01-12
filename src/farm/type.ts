@@ -1,5 +1,5 @@
-import { JsonFileMetaData } from '../common'
-import { LpTokenInfo, SplTokenInfo } from '../token'
+import { JsonFileMetaData } from '../common/index.js'
+import { LpTokenInfo, SplTokenInfo } from '../token/index.js'
 
 export type FarmVersion = 3 | 4 | 5 | 6
 

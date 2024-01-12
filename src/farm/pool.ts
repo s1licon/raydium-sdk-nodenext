@@ -1,6 +1,6 @@
-import { MAINNET_LP_TOKENS, MAINNET_SPL_TOKENS } from '../token'
+import { MAINNET_LP_TOKENS, MAINNET_SPL_TOKENS } from '../token/index.js'
 
-import { FarmPoolBaseInfo } from './type'
+import { FarmPoolBaseInfo } from './type.js'
 
 export const MAINNET_FARM_POOLS: FarmPoolBaseInfo[] = [
   {

@@ -9,9 +9,9 @@ import {
   RENT_PROGRAM_ID,
   SYSTEM_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
-} from '../common'
-import { ZERO } from '../entity'
-import { bool, struct, u32, u64, u8 } from '../marshmallow'
+} from '../common/index.js'
+import { ZERO } from '../entity/index.js'
+import { bool, struct, u32, u64, u8 } from '../marshmallow/index.js'
 
 const anchorDataBuf = {
   voterStakeRegistryCreateVoter: Buffer.from([6, 24, 245, 52, 243, 255, 148, 25]), // CreateVoter

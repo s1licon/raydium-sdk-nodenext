@@ -1,16 +1,16 @@
 import { Connection, PublicKey } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { ApiClmmPoolsItem } from '../../baseInfo'
-import { ZERO } from '../../entity'
-import { ClmmPoolInfo, ClmmPoolRewardInfo, ClmmPoolRewardLayoutInfo, TickArrayBitmapExtensionLayout } from '../clmm'
+import { ApiClmmPoolsItem } from '../../baseInfo/index.js'
+import { ZERO } from '../../entity/index.js'
+import { ClmmPoolInfo, ClmmPoolRewardInfo, ClmmPoolRewardLayoutInfo, TickArrayBitmapExtensionLayout } from '../clmm.js'
 
-import { MAX_TICK, MIN_TICK, NEGATIVE_ONE, Q64 } from './constants'
-import { MathUtil, SwapMath } from './math'
-import { getPdaTickArrayAddress } from './pda'
-import { TICK_ARRAY_BITMAP_SIZE, TickArray, TickUtils } from './tick'
-import { TickArrayBitmap, TickArrayBitmapExtension } from './tickarrayBitmap'
-import { TickQuery } from './tickQuery'
+import { MAX_TICK, MIN_TICK, NEGATIVE_ONE, Q64 } from './constants.js'
+import { MathUtil, SwapMath } from './math.js'
+import { getPdaTickArrayAddress } from './pda.js'
+import { TICK_ARRAY_BITMAP_SIZE, TickArray, TickUtils } from './tick.js'
+import { TickArrayBitmap, TickArrayBitmapExtension } from './tickarrayBitmap.js'
+import { TickQuery } from './tickQuery.js'
 
 export class PoolUtils {
   public static getOutputAmountAndRemainAccounts(

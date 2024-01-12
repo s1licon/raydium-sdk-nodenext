@@ -9,8 +9,8 @@ import {
   InstructionType,
   TokenAccount,
   TxVersion,
-} from '../base'
-import { getATAAddress } from '../base/pda'
+} from '../base/index.js'
+import { getATAAddress } from '../base/pda.js'
 import {
   AccountMeta,
   AccountMetaReadonly,
@@ -24,11 +24,11 @@ import {
   SYSVAR_CLOCK_PUBKEY,
   SYSVAR_RENT_PUBKEY,
   TOKEN_PROGRAM_ID,
-} from '../common'
-import { BigNumberish, parseBigNumberish, TEN, Token, ZERO } from '../entity'
-import { seq, struct, u64, u8 } from '../marshmallow'
-import { Spl, SPL_ACCOUNT_LAYOUT, SplAccount } from '../spl'
-import { WSOL } from '../token'
+} from '../common/index.js'
+import { BigNumberish, parseBigNumberish, TEN, Token, ZERO } from '../entity/index.js'
+import { seq, struct, u64, u8 } from '../marshmallow/index.js'
+import { Spl, SPL_ACCOUNT_LAYOUT, SplAccount } from '../spl/index.js'
+import { WSOL } from '../token/index.js'
 
 import {
   governanceCreateTokenOwnerRecord,
@@ -37,7 +37,7 @@ import {
   voterStakeRegistryDeposit,
   voterStakeRegistryUpdateVoterWeightRecord,
   voterStakeRegistryWithdraw,
-} from './importInstruction'
+} from './importInstruction.js'
 import {
   FARM_LEDGER_LAYOUT_V3_1,
   FARM_LEDGER_LAYOUT_V3_2,
@@ -52,7 +52,7 @@ import {
   REAL_FARM_STATE_LAYOUT_V5,
   Voter,
   VoterRegistrar,
-} from './layout'
+} from './layout.js'
 import {
   getRegistrarAddress,
   getTokenOwnerRecordAddress,
@@ -60,7 +60,7 @@ import {
   getVoterWeightRecordAddress,
   getVotingMintAuthority,
   getVotingTokenMint,
-} from './pda'
+} from './pda.js'
 
 const logger = Logger.from('Farm')
 

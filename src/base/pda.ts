@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js'
 
-import { findProgramAddress } from '../common'
+import { findProgramAddress } from '../common/index.js'
 
 export function getATAAddress(owner: PublicKey, mint: PublicKey, programId: PublicKey) {
   return findProgramAddress(

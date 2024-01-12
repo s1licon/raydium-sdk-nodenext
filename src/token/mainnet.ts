@@ -1,5 +1,5 @@
-import { WSOL } from './sol'
-import { LpTokens, SplTokens } from './type'
+import { WSOL } from './sol.js'
+import { LpTokens, SplTokens } from './type.js'
 
 export const MAINNET_SPL_TOKENS: SplTokens = {
   WSOL: {

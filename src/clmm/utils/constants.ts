@@ -1,6 +1,6 @@
 import BN from 'bn.js'
 
-import { ONE } from '../../entity'
+import { ONE } from '../../entity/index.js'
 
 export const NEGATIVE_ONE = new BN(-1)
 

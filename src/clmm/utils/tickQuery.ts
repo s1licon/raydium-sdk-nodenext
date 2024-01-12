@@ -1,13 +1,13 @@
 import { Connection, PublicKey } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { getMultipleAccountsInfo } from '../../common'
-import { TickArrayBitmapExtensionLayout } from '../clmm'
-import { TickArrayLayout } from '../layout'
+import { getMultipleAccountsInfo } from '../../common/index.js'
+import { TickArrayBitmapExtensionLayout } from '../clmm.js'
+import { TickArrayLayout } from '../layout.js'
 
-import { MAX_TICK, MIN_TICK } from './constants'
-import { getPdaTickArrayAddress } from './pda'
-import { TICK_ARRAY_SIZE, Tick, TickArray, TickUtils } from './tick'
+import { MAX_TICK, MIN_TICK } from './constants.js'
+import { getPdaTickArrayAddress } from './pda.js'
+import { TICK_ARRAY_SIZE, Tick, TickArray, TickUtils } from './tick.js'
 
 export const FETCH_TICKARRAY_COUNT = 15
 

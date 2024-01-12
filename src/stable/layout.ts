@@ -1,4 +1,4 @@
-import { GetStructureSchema, publicKey, seq, struct, u128, u64 } from '../marshmallow'
+import { GetStructureSchema, publicKey, seq, struct, u128, u64 } from '../marshmallow/index.js'
 
 /* ================= state layouts ================= */
 export const STABLE_STATE_LAYOUT_V1 = struct([

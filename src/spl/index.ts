@@ -1,2 +1,2 @@
-export * from './layout'
-export * from './spl'
+export * from './layout.js'
+export * from './spl.js'

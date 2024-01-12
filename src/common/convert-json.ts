@@ -1,9 +1,9 @@
 import { PublicKey } from '@solana/web3.js'
 import { BN } from 'bn.js'
 
-import { Currency, CurrencyAmount, Fraction, Percent, Price, TokenAmount } from '../entity'
+import { Currency, CurrencyAmount, Fraction, Percent, Price, TokenAmount } from '../entity/index.js'
 
-import { validateAndParsePublicKey } from './pubkey'
+import { validateAndParsePublicKey } from './pubkey.js'
 
 type Primitive = boolean | number | string | null | undefined | PublicKey
 

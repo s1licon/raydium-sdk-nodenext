@@ -1,10 +1,10 @@
 import { Connection, PublicKey, Signer, TransactionInstruction } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { Base, InstructionType, TokenAccount, TxVersion } from '../base'
-import { CacheLTA, TOKEN_PROGRAM_ID, findProgramAddress, getMultipleAccountsInfo, splitTxAndSigners } from '../common'
-import { Token } from '../entity'
-import { blob, publicKey, seq, struct, u64, u8 } from '../marshmallow'
+import { Base, InstructionType, TokenAccount, TxVersion } from '../base/index.js'
+import { CacheLTA, TOKEN_PROGRAM_ID, findProgramAddress, getMultipleAccountsInfo, splitTxAndSigners } from '../common/index.js'
+import { Token } from '../entity/index.js'
+import { blob, publicKey, seq, struct, u64, u8 } from '../marshmallow/index.js'
 
 export interface SHOW_INFO {
   programId: PublicKey

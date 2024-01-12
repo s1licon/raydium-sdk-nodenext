@@ -1,4 +1,4 @@
-import { NativeTokenInfo, SplTokenInfo } from './type'
+import { NativeTokenInfo, SplTokenInfo } from './type.js'
 
 export const SOL: NativeTokenInfo = {
   symbol: 'SOL',

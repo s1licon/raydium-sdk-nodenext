@@ -1,8 +1,8 @@
 import { PublicKey } from '@solana/web3.js'
 
-import { SerumVersion } from '../serum'
+import { SerumVersion } from '../serum/index.js'
 
-import { StableVersion } from './type'
+import { StableVersion } from './type.js'
 
 /* ================= program public keys ================= */
 export const _STABLE_PROGRAM_ID_V1 = '5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h'

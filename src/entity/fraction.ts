@@ -1,12 +1,14 @@
-import _Big from 'big.js'
+import * as __Big from 'big.js'
 import BN from 'bn.js'
-import _Decimal from 'decimal.js-light'
+import * as __decimal from 'decimal.js-light'
+const { Big: _Big } = __Big
+const _Decimal = __decimal.default
 
-import { Logger } from '../common'
+import { Logger } from '../common/index.js'
 
-import { BigNumberish, parseBigNumberish } from './bignumber'
-import { ONE, Rounding } from './constant'
-import toFormat, { WrappedBig } from './to-format'
+import { BigNumberish, parseBigNumberish } from './bignumber.js'
+import { ONE, Rounding } from './constant.js'
+import { WrappedBig, toFormat } from './to-format.js'
 
 const logger = Logger.from('entity/fraction')
 

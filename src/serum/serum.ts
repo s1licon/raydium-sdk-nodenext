@@ -1,9 +1,9 @@
 import { PublicKey } from '@solana/web3.js'
 
-import { Logger } from '../common'
+import { Logger } from '../common/index.js'
 
-import { SERUM_PROGRAMID_TO_VERSION, SERUM_VERSION_TO_PROGRAMID } from './id'
-import { MARKET_VERSION_TO_STATE_LAYOUT } from './layout'
+import { SERUM_PROGRAMID_TO_VERSION, SERUM_VERSION_TO_PROGRAMID } from './id.js'
+import { MARKET_VERSION_TO_STATE_LAYOUT } from './layout.js'
 
 const logger = Logger.from('Serum')
 

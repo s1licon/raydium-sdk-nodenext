@@ -1,14 +1,26 @@
 {
-  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "composite": true
+    "target": "ES2021",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": false,
+    "noEmitOnError": true,
+    "resolveJsonModule": true,
+    "stripInternal": true,
+    "rootDir": "src",
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "outDir": "lib/esm",
+    "declarationDir": "lib/types"
   },
-  "references": [
-    {
-      "path": "./tsconfig.cjs.json"
-    },
-    {
-      "path": "./tsconfig.esm.json"
+  "include": ["src"],
+  "ts-node": {
+    "files": true,
+    "compilerOptions": {
+      "module": "CommonJS"
     }
-  ]
+  }
 }

@@ -1,10 +1,10 @@
 import BN from 'bn.js'
 
-import { ClmmPoolInfo, ClmmPoolPersonalPosition, ClmmPoolRewardInfo } from '../clmm'
+import { ClmmPoolInfo, ClmmPoolPersonalPosition, ClmmPoolRewardInfo } from '../clmm.js'
 
-import { Q64 } from './constants'
-import { MathUtil } from './math'
-import { Tick } from './tick'
+import { Q64 } from './constants.js'
+import { MathUtil } from './math.js'
+import { Tick } from './tick.js'
 
 export class PositionUtils {
   static getfeeGrowthInside(poolState: ClmmPoolInfo, tickLowerState: Tick, tickUpperState: Tick) {

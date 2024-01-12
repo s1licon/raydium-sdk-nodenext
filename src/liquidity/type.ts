@@ -1,5 +1,5 @@
-import { JsonFileMetaData } from '../common'
-import { LpTokenInfo } from '../token'
+import { JsonFileMetaData } from '../common/index.js'
+import { LpTokenInfo } from '../token/index.js'
 
 // 2 | 3 | 4
 export type LiquidityVersion = 4 | 5

@@ -1,6 +1,6 @@
 import { PublicKey, SystemProgram } from '@solana/web3.js'
 
-import { Logger } from './logger'
+import { Logger } from './logger.js'
 
 const logger = Logger.from('common/pubkey')
 

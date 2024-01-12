@@ -9,7 +9,7 @@ import {
   TransactionInstruction,
 } from '@solana/web3.js'
 import BN from 'bn.js'
-import Decimal from 'decimal.js'
+import { Decimal } from 'decimal.js'
 
 import {
   Base,
@@ -26,9 +26,9 @@ import {
   TokenAccount,
   TransferAmountFee,
   TxVersion,
-} from '../base'
-import { getATAAddress } from '../base/pda'
-import { ApiClmmPoolsItem, ApiClmmPoolsItemStatistics } from '../baseInfo'
+} from '../base/index.js'
+import { getATAAddress } from '../base/pda.js'
+import { ApiClmmPoolsItem, ApiClmmPoolsItemStatistics } from '../baseInfo/index.js'
 import {
   CacheLTA,
   getMultipleAccountsInfo,
@@ -36,9 +36,9 @@ import {
   Logger,
   splitTxAndSigners,
   TOKEN_PROGRAM_ID,
-} from '../common'
-import { Currency, CurrencyAmount, ONE, Percent, Price, Token, TokenAmount, ZERO } from '../entity'
-import { SPL_ACCOUNT_LAYOUT } from '../spl'
+} from '../common/index.js'
+import { Currency, CurrencyAmount, ONE, Percent, Price, Token, TokenAmount, ZERO } from '../entity/index.js'
+import { SPL_ACCOUNT_LAYOUT } from '../spl/index.js'
 
 import {
   closePositionInstruction,
@@ -52,7 +52,7 @@ import {
   openPositionFromLiquidityInstruction,
   setRewardInstruction,
   swapInstruction,
-} from './instrument'
+} from './instrument.js'
 import {
   ObservationInfoLayout,
   OperationLayout,
@@ -60,9 +60,9 @@ import {
   PositionInfoLayout,
   TickArrayBitmapExtension,
   TickArrayLayout,
-} from './layout'
-import { MAX_SQRT_PRICE_X64, MIN_SQRT_PRICE_X64, U64_IGNORE_RANGE } from './utils/constants'
-import { LiquidityMath, MathUtil, SqrtPriceMath, TickMath } from './utils/math'
+} from './layout.js'
+import { MAX_SQRT_PRICE_X64, MIN_SQRT_PRICE_X64, U64_IGNORE_RANGE } from './utils/constants.js'
+import { LiquidityMath, MathUtil, SqrtPriceMath, TickMath } from './utils/math.js'
 import {
   getPdaExBitmapAccount,
   getPdaMetadataKey,
@@ -73,11 +73,11 @@ import {
   getPdaPoolVaultId,
   getPdaProtocolPositionAddress,
   getPdaTickArrayAddress,
-} from './utils/pda'
-import { PoolUtils } from './utils/pool'
-import { PositionUtils } from './utils/position'
-import { Tick, TickArray, TickUtils } from './utils/tick'
-import { EXTENSION_TICKARRAY_BITMAP_SIZE } from './utils/tickarrayBitmap'
+} from './utils/pda.js'
+import { PoolUtils } from './utils/pool.js'
+import { PositionUtils } from './utils/position.js'
+import { Tick, TickArray, TickUtils } from './utils/tick.js'
+import { EXTENSION_TICKARRAY_BITMAP_SIZE } from './utils/tickarrayBitmap.js'
 
 const logger = Logger.from('Clmm')
 

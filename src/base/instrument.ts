@@ -1,6 +1,6 @@
 import { ComputeBudgetProgram, TransactionInstruction } from '@solana/web3.js'
 
-import { ComputeBudgetConfig, InnerTransaction, InstructionType } from '../base'
+import { ComputeBudgetConfig, InnerTransaction, InstructionType } from '../base/index.js'
 
 export function addComputeBudget(config: ComputeBudgetConfig) {
   const ins: TransactionInstruction[] = []

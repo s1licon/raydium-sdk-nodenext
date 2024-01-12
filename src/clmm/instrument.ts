@@ -9,9 +9,9 @@ import {
   RENT_PROGRAM_ID,
   SYSTEM_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
-} from '../common'
-import { ZERO, parseBigNumberish } from '../entity'
-import { bool, s32, struct, u128, u64, u8 } from '../marshmallow'
+} from '../common/index.js'
+import { ZERO, parseBigNumberish } from '../entity/index.js'
+import { bool, s32, struct, u128, u64, u8 } from '../marshmallow/index.js'
 
 const anchorDataBuf = {
   createPool: [233, 146, 209, 142, 207, 104, 64, 188],

@@ -1,6 +1,6 @@
 import { AddressLookupTableAccount, PublicKey } from '@solana/web3.js'
 
-import { CacheLTA } from '../common'
+import { CacheLTA } from '../common/index.js'
 
 export const LOOKUP_TABLE_CACHE: CacheLTA = {
   '2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17': new AddressLookupTableAccount({

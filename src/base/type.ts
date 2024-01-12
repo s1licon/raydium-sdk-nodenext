@@ -1,6 +1,6 @@
 import { PublicKey, Signer, TransactionInstruction } from '@solana/web3.js'
 
-import { CacheLTA } from '../common'
+import { CacheLTA } from '../common/index.js'
 
 export interface ComputeBudgetConfig {
   units?: number

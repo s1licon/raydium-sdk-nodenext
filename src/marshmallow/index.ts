@@ -1,5 +1,6 @@
 import { PublicKey } from '@solana/web3.js'
-import BN, { isBN } from 'bn.js'
+import BN from 'bn.js'
+const isBN = BN.isBN
 
 import {
   Blob,
@@ -14,9 +15,9 @@ import {
   union as _union,
   bits,
   blob,
-} from './buffer-layout'
+} from './buffer-layout.js'
 
-export * from './buffer-layout'
+export * from './buffer-layout.js'
 export { blob }
 
 export class BNLayout<P extends string = ''> extends Layout<BN, P> {

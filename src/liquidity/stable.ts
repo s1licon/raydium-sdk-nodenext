@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js'
 
-import { seq, struct, u64 } from '../marshmallow'
+import { seq, struct, u64 } from '../marshmallow/index.js'
 
 export const ModelDataPubkey = new PublicKey('CDSr3ssLcRB6XYPJwAfFt18MZvEZp4LjHcvzBVZ45duo')
 const ELEMENT_SIZE = 50000

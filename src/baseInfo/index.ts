@@ -1,3 +1,3 @@
-export * from './apiLink'
-export * from './interface'
-export * from './program'
+export * from './apiLink.js'
+export * from './interface.js'
+export * from './program.js'

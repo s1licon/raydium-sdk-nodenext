@@ -11,10 +11,10 @@ import {
   TokenAccount,
   TransferAmountFee,
   TxVersion,
-} from '../base'
-import { ApiPoolInfo, ApiPoolInfoItem } from '../baseInfo'
-import { Clmm, ClmmPoolInfo, ReturnTypeFetchMultiplePoolTickArrays } from '../clmm'
-import { MAX_SQRT_PRICE_X64, MIN_SQRT_PRICE_X64 } from '../clmm/utils/constants'
+} from '../base/index.js'
+import { ApiPoolInfo, ApiPoolInfoItem } from '../baseInfo/index.js'
+import { Clmm, ClmmPoolInfo, ReturnTypeFetchMultiplePoolTickArrays } from '../clmm/index.js'
+import { MAX_SQRT_PRICE_X64, MIN_SQRT_PRICE_X64 } from '../clmm/utils/constants.js'
 import {
   CacheLTA,
   jsonInfo2PoolKeys,
@@ -22,12 +22,12 @@ import {
   parseSimulateValue,
   simulateMultipleInstruction,
   splitTxAndSigners,
-} from '../common'
-import { Currency, CurrencyAmount, ONE, Percent, Price, Token, TokenAmount, TokenAmountType, ZERO } from '../entity'
-import { initStableModelLayout, Liquidity, LiquidityPoolKeys } from '../liquidity'
-import { WSOL } from '../token'
+} from '../common/index.js'
+import { Currency, CurrencyAmount, ONE, Percent, Price, Token, TokenAmount, TokenAmountType, ZERO } from '../entity/index.js'
+import { initStableModelLayout, Liquidity, LiquidityPoolKeys } from '../liquidity/index.js'
+import { WSOL } from '../token/index.js'
 
-import { routeInstruction } from './instrument'
+import { routeInstruction } from './instrument.js'
 
 export type PoolType = ClmmPoolInfo | ApiPoolInfoItem
 type RoutePathType = {

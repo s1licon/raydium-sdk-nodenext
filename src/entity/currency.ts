@@ -2,8 +2,8 @@
 
 import { PublicKey } from '@solana/web3.js'
 
-import { PublicKeyish, TOKEN_PROGRAM_ID, validateAndParsePublicKey } from '../common'
-import { SOL, WSOL } from '../token'
+import { PublicKeyish, TOKEN_PROGRAM_ID, validateAndParsePublicKey } from '../common/index.js'
+import { SOL, WSOL } from '../token/index.js'
 
 /**
  * A currency is any fungible financial instrument on Solana, including SOL and all SPL tokens.

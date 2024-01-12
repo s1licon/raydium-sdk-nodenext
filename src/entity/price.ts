@@ -1,9 +1,9 @@
-import { Logger } from '../common'
+import { Logger } from '../common/index.js'
 
-import { BigNumberish, tenExponentiate } from './bignumber'
-import { Rounding } from './constant'
-import { Currency, currencyEquals } from './currency'
-import { Fraction } from './fraction'
+import { BigNumberish, tenExponentiate } from './bignumber.js'
+import { Rounding } from './constant.js'
+import { Currency, currencyEquals } from './currency.js'
+import { Fraction } from './fraction.js'
 
 const logger = Logger.from('entity/price')
 

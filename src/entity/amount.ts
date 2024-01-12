@@ -1,13 +1,13 @@
 import _Big from 'big.js'
 import BN from 'bn.js'
 
-import { Logger } from '../common'
+import { Logger } from '../common/index.js'
 
-import { BigNumberish, parseBigNumberish } from './bignumber'
-import { Rounding, TEN } from './constant'
-import { Currency, Token, currencyEquals } from './currency'
-import { Fraction } from './fraction'
-import toFormat, { WrappedBig } from './to-format'
+import { BigNumberish, parseBigNumberish } from './bignumber.js'
+import { Rounding, TEN } from './constant.js'
+import { Currency, Token, currencyEquals } from './currency.js'
+import { Fraction } from './fraction.js'
+import { WrappedBig, toFormat } from './to-format.js'
 
 const logger = Logger.from('entity/amount')
 

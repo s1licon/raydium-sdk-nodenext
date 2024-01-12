@@ -10,10 +10,10 @@ import {
   TransactionInstruction,
 } from '@solana/web3.js'
 
-import { BigNumberish, Token } from '../entity'
-import { Spl, SplAccount } from '../spl'
+import { BigNumberish, Token } from '../entity/index.js'
+import { Spl, SplAccount } from '../spl/index.js'
 
-import { InstructionType } from './type'
+import { InstructionType } from './type.js'
 
 export interface TokenAccount {
   programId: PublicKey

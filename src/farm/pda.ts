@@ -1,6 +1,6 @@
 import { PublicKey } from '@solana/web3.js'
 
-import { findProgramAddress } from '../common'
+import { findProgramAddress } from '../common/index.js'
 
 export function getRegistrarAddress(programId: PublicKey, realm: PublicKey, communityTokenMint: PublicKey) {
   return findProgramAddress(

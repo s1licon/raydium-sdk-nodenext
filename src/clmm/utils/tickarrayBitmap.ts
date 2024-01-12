@@ -1,11 +1,11 @@
 import BN from 'bn.js'
 
-import { TickArrayBitmapExtensionLayout } from '../clmm'
+import { TickArrayBitmapExtensionLayout } from '../clmm.js'
 
-import { MAX_TICK, MIN_TICK } from './constants'
-import { TICK_ARRAY_BITMAP_SIZE, TICK_ARRAY_SIZE, TickUtils } from './tick'
-import { TickQuery } from './tickQuery'
-import { isZero, leadingZeros, leastSignificantBit, mostSignificantBit, trailingZeros } from './util'
+import { MAX_TICK, MIN_TICK } from './constants.js'
+import { TICK_ARRAY_BITMAP_SIZE, TICK_ARRAY_SIZE, TickUtils } from './tick.js'
+import { TickQuery } from './tickQuery.js'
+import { isZero, leadingZeros, leastSignificantBit, mostSignificantBit, trailingZeros } from './util.js'
 
 export const EXTENSION_TICKARRAY_BITMAP_SIZE = 14
 

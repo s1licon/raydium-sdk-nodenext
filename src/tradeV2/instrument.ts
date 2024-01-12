@@ -2,12 +2,12 @@ import { TOKEN_2022_PROGRAM_ID, TOKEN_PROGRAM_ID } from '@solana/spl-token'
 import { PublicKey, TransactionInstruction } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { ClmmPoolInfo, getPdaExBitmapAccount } from '../clmm'
-import { MEMO_PROGRAM_ID, SYSTEM_PROGRAM_ID, jsonInfo2PoolKeys } from '../common'
-import { LiquidityPoolKeysV4 } from '../liquidity'
-import { struct, u64, u8 } from '../marshmallow'
+import { ClmmPoolInfo, getPdaExBitmapAccount } from '../clmm/index.js'
+import { MEMO_PROGRAM_ID, SYSTEM_PROGRAM_ID, jsonInfo2PoolKeys } from '../common/index.js'
+import { LiquidityPoolKeysV4 } from '../liquidity/index.js'
+import { struct, u64, u8 } from '../marshmallow/index.js'
 
-import { PoolType } from './trade'
+import { PoolType } from './trade.js'
 
 export function route1Instruction(
   programId: PublicKey,

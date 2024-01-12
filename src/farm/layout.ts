@@ -15,10 +15,10 @@ import {
   u128,
   u64,
   u8,
-} from '../marshmallow'
+} from '../marshmallow/index.js'
 
-import { poolTypeV6 } from './farm'
-import { FarmVersion } from './type'
+import { poolTypeV6 } from './farm.js'
+import { FarmVersion } from './type.js'
 
 /* ================= state layouts ================= */
 export const REAL_FARM_STATE_LAYOUT_V3 = struct([

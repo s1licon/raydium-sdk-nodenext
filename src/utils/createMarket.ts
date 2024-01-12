@@ -2,10 +2,10 @@ import { createInitializeAccountInstruction } from '@solana/spl-token'
 import { Connection, PublicKey, SystemProgram, TransactionInstruction } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { Base, generatePubKey, InstructionType, TxVersion } from '../base'
-import { CacheLTA, splitTxAndSigners, SYSVAR_RENT_PUBKEY, TOKEN_PROGRAM_ID } from '../common'
-import { ZERO } from '../entity'
-import { blob, publicKey, struct, u16, u32, u64, u8, WideBits } from '../marshmallow'
+import { Base, generatePubKey, InstructionType, TxVersion } from '../base/index.js'
+import { CacheLTA, splitTxAndSigners, SYSVAR_RENT_PUBKEY, TOKEN_PROGRAM_ID } from '../common/index.js'
+import { ZERO } from '../entity/index.js'
+import { blob, publicKey, struct, u16, u32, u64, u8, WideBits } from '../marshmallow/index.js'
 
 function accountFlagsLayout(property = 'accountFlags') {
   const ACCOUNT_FLAGS_LAYOUT = new WideBits(property)

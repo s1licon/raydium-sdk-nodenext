@@ -1,4 +1,4 @@
-import { GetStructureSchema, publicKey, struct, u32, u64, u8 } from '../marshmallow'
+import { GetStructureSchema, publicKey, struct, u32, u64, u8 } from '../marshmallow/index.js'
 
 export const SPL_MINT_LAYOUT = struct([
   u32('mintAuthorityOption'),

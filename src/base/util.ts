@@ -19,13 +19,19 @@ import {
   getMultipleLookupTableInfo,
   splitTxAndSigners,
   TOKEN_PROGRAM_ID,
-} from '../common'
-import { CurrencyAmount, ONE, TokenAmount, ZERO } from '../entity'
-import { Spl } from '../spl'
-import { WSOL } from '../token'
+} from '../common/index.js'
+import { CurrencyAmount, ONE, TokenAmount, ZERO } from '../entity/index.js'
+import { Spl } from '../spl/index.js'
+import { WSOL } from '../token/index.js'
 
-import { TokenAccount } from './base'
-import { InnerSimpleTransaction, InnerSimpleV0Transaction, InnerTransaction, InstructionType, TxVersion } from './type'
+import { TokenAccount } from './base.js'
+import {
+  InnerSimpleTransaction,
+  InnerSimpleV0Transaction,
+  InnerTransaction,
+  InstructionType,
+  TxVersion,
+} from './type.js'
 
 export function getWSOLAmount({ tokenAccounts }: { tokenAccounts: TokenAccount[] }) {
   const WSOL_MINT = new PublicKey(WSOL.mint)

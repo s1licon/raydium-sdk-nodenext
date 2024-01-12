@@ -1,6 +1,6 @@
-import { Logger } from '../common'
+import { Logger } from '../common/index.js'
 
-import { LpTokenInfo, SplTokenInfo } from './type'
+import { LpTokenInfo, SplTokenInfo } from './type.js'
 
 const logger = Logger.from('token/util')
 

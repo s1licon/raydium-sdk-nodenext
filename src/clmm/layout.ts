@@ -1,7 +1,7 @@
-import { blob, bool, i128, publicKey, s32, seq, struct, u128, u16, u32, u64, u8 } from '../marshmallow'
+import { blob, bool, i128, publicKey, s32, seq, struct, u128, u16, u32, u64, u8 } from '../marshmallow/index.js'
 
-import { TICK_ARRAY_SIZE } from './utils/tick'
-import { EXTENSION_TICKARRAY_BITMAP_SIZE } from './utils/tickarrayBitmap'
+import { TICK_ARRAY_SIZE } from './utils/tick.js'
+import { EXTENSION_TICKARRAY_BITMAP_SIZE } from './utils/tickarrayBitmap.js'
 
 export const AmmConfigLayout = struct([
   blob(8),

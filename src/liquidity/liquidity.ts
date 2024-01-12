@@ -10,10 +10,10 @@ import {
   MakeInstructionOutType,
   TokenAccount,
   TxVersion,
-} from '../base'
-import { getATAAddress } from '../base/pda'
-import { ApiPoolInfoItem } from '../baseInfo'
-import { Clmm, ClmmPoolInfo } from '../clmm'
+} from '../base/index.js'
+import { getATAAddress } from '../base/pda.js'
+import { ApiPoolInfoItem } from '../baseInfo/index.js'
+import { Clmm, ClmmPoolInfo } from '../clmm/index.js'
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   AccountMeta,
@@ -30,7 +30,7 @@ import {
   parseSimulateValue,
   simulateMultipleInstruction,
   splitTxAndSigners,
-} from '../common'
+} from '../common/index.js'
 import {
   BigNumberish,
   Currency,
@@ -43,12 +43,12 @@ import {
   ZERO,
   divCeil,
   parseBigNumberish,
-} from '../entity'
-import { Farm, FarmPoolKeys } from '../farm'
-import { struct, u64, u8 } from '../marshmallow'
-import { MARKET_STATE_LAYOUT_V3, Market, MarketState } from '../serum'
+} from '../entity/index.js'
+import { Farm, FarmPoolKeys } from '../farm/index.js'
+import { struct, u64, u8 } from '../marshmallow/index.js'
+import { MARKET_STATE_LAYOUT_V3, Market, MarketState } from '../serum/index.js'
 
-import { LIQUIDITY_VERSION_TO_STATE_LAYOUT, LiquidityStateV4, LiquidityStateV5 } from './layout'
+import { LIQUIDITY_VERSION_TO_STATE_LAYOUT, LiquidityStateV4, LiquidityStateV5 } from './layout.js'
 import {
   ModelDataPubkey,
   StableModelLayout,
@@ -56,7 +56,7 @@ import {
   getDxByDyBaseIn,
   getDyByDxBaseIn,
   getStablePrice,
-} from './stable'
+} from './stable.js'
 
 const logger = Logger.from('Liquidity')
 

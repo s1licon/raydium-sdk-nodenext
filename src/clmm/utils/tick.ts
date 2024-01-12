@@ -1,11 +1,11 @@
 import { PublicKey } from '@solana/web3.js'
 import BN from 'bn.js'
 
-import { TickArrayBitmapExtensionLayout } from '../clmm'
+import { TickArrayBitmapExtensionLayout } from '../clmm.js'
 
-import { MAX_TICK, MIN_TICK } from './constants'
-import { getPdaTickArrayAddress } from './pda'
-import { TickQuery } from './tickQuery'
+import { MAX_TICK, MIN_TICK } from './constants.js'
+import { getPdaTickArrayAddress } from './pda.js'
+import { TickQuery } from './tickQuery.js'
 
 export const TICK_ARRAY_SIZE = 60
 export const TICK_ARRAY_BITMAP_SIZE = 512

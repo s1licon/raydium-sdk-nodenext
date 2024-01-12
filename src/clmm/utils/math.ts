@@ -1,9 +1,9 @@
 import { PublicKey } from '@solana/web3.js'
 import BN from 'bn.js'
-import Decimal from 'decimal.js'
+import { Decimal } from 'decimal.js'
 
-import { ONE, ZERO } from '../../entity'
-import { TickArrayBitmapExtensionLayout } from '../clmm'
+import { ONE, ZERO } from '../../entity/index.js'
+import { TickArrayBitmapExtensionLayout } from '../clmm.js'
 
 import {
   BIT_PRECISION,
@@ -22,11 +22,11 @@ import {
   Q128,
   Q64,
   U64Resolution,
-} from './constants'
-import { getPdaTickArrayAddress } from './pda'
-import { PoolUtils } from './pool'
-import { Tick, TickArray, TickUtils } from './tick'
-import { TickQuery } from './tickQuery'
+} from './constants.js'
+import { getPdaTickArrayAddress } from './pda.js'
+import { PoolUtils } from './pool.js'
+import { Tick, TickArray, TickUtils } from './tick.js'
+import { TickQuery } from './tickQuery.js'
 
 export class MathUtil {
   public static mulDivRoundingUp(a: BN, b: BN, denominator: BN): BN {

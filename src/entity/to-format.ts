@@ -1,6 +1,7 @@
 import Big, { BigConstructor, BigSource, RoundingMode } from 'big.js'
-import Decimal, { Config, Numeric } from 'decimal.js-light'
-import _toFarmat from 'toformat'
+import { Config, Decimal, Numeric } from 'decimal.js-light'
+import * as __toFarmat from 'toformat'
+const _toFarmat = __toFarmat.default
 
 type TakeStatic<T> = { [P in keyof T]: T[P] }
 interface FormatOptions {
@@ -86,8 +87,7 @@ export interface WrappedDecimal extends Decimal {
   toFormat(fractionLength: number, missionUnknown: number, options: FormatOptions): string
 }
 
-const toFormat: {
+export const toFormat: {
   (fn: BigConstructor): WrappedBigConstructor
   (fn: DecimalConstructor): WrappedDecimalConstructor
 } = _toFarmat
-export default toFormat
